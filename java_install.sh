@@ -9,7 +9,7 @@ if [ $flag -ne 0 ]; then
         exit 1
 else   
         echo ""
-        echo "Congratulations: step $step successful"
+        echo "Congratulations: step $step is successful"
 fi
 
 }
