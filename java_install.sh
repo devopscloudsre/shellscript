@@ -11,4 +11,12 @@ cd /usr/lib/jvm/
 
 var=$(ls -ld java-1.8.0-openjdk-1.8.0* | awk '{print $9}')
 
+# Taking backup before change
+
+cp $HOME/.bash_profile $HOME/.bash_profile-backup
+
+echo "export JAVA_HOME=/usr/lib/jvm/$var" >> $HOME/.bash_profile
+echo "PATH=$JAVA_HOME/bin:$HOME/bin:$PATH" >> $HOME/.bash_profile
+
+
 
